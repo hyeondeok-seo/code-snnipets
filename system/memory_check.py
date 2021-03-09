@@ -5,7 +5,6 @@ import time
 max_count = 3600
 count = 0
 
-pids = ['5180', '5187']
 pids = ['57306']
 out = subprocess.Popen(['ps', 'u', '-p', ','.join(pids)],
                        stdout=subprocess.PIPE).communicate()[0].split(b'\n')
